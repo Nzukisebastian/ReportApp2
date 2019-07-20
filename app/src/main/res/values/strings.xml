@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">EliteApp</string>
+    <string name="nameerror">Enter Valid Name</string>
+    <string name="emailerror">Enter Valid Email</string>
+    <string name="passworderror">Enter Some Password</string>
+    <string name="mobileerror">Enter Valid Mobile Number</string>
+    <string name="api_key"></string>
+    <string name="enter_location">Enter Location</string>
+    <string name="auto_complete_text">Autocomplete textview with custom adapter.</string>
+    <string name="error">Google Api key is missing.</string>
+
+
+    <string name="profile">Profile</string>
+    <string name="Reportedcases">Reported Cases</string>
+    <string name="logout">Logout</string>
+
+    <string name="Companyprofile">Company Profile</string>
+    <string name="companyreports">Reported Cases</string>
+    <string name="companylogout">Logout</string>
+
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elitelodgit.eliteapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CompanyReports.Company_Full_Details"></activity>
+        <activity android:name=".ClientReports.Full_Details" />
+        <activity
+            android:name=".ClientReports.Client_Reports_Screen"
+            android:parentActivityName=".ClientReports.Client_Reports_Screen" />
+        <activity
+            android:name=".ClientProfile.ShowProfileScreen"
+            android:parentActivityName=".ClientReports.Client_Reports_Screen" />
+        <activity android:name=".Registerlogin.Companyforgotpassword" />
+        <activity android:name=".Registerlogin.Recoverpassword" />
+        <activity android:name=".Registerlogin.InvestigatorRegister" />
+        <activity android:name=".UserTasks.InvestigatorForms" />
+        <activity android:name=".Registerlogin.ClientForm" />
+        <activity android:name=".Registerlogin.ClientRegister" />
+        <activity android:name=".Registerlogin.Link" />
+        <activity android:name=".Registerlogin.InvestigatorLogin" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Registerlogin.ClientLogins">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CompanyReports.Company_Reports_Screen"
+            android:parentActivityName=".CompanyReports.Company_Reports_Screen" />
+        <activity
+            android:name=".CompanyProfile.Company_Profile_Screen"
+            android:parentActivityName=".CompanyReports.Company_Reports_Screen" />
+    </application>
+
+</manifest>

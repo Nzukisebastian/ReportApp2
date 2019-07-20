@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registerlogin.InvestigatorRegister">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/background_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageVIew"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon"
+            android:background="@drawable/background_white"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/background_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Information"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/textView7"
+            android:textColor="#2e5894" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="* Company Name:"
+            android:textSize="14sp"
+            android:id="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/etname"
+            android:textColor="#F50A1E"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/box"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:id="@+id/etcompanyname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/textView9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="* Registration"
+            android:id="@+id/textView8"
+            android:textSize="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/etname"
+            android:textColor="#F50A1E" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/box"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:id="@+id/etregister"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/textView9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="* Official Email Address"
+            android:id="@+id/textView8ss"
+            android:textSize="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/etname"
+            android:textColor="#F50A1E"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/box"
+            android:id="@+id/etofficialemail"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/textView9" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="* Official Tel No"
+            android:id="@+id/textView9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/etphone"
+            android:textSize="14sp"
+            android:textColor="#F50A1E"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/ettelno"
+            android:inputType="phone"
+            android:background="@drawable/box"
+            android:textSize="16sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/etname"
+            android:layout_alignEnd="@+id/etname"
+            android:layout_above="@+id/textView10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="* Company Type:"
+            android:id="@+id/textView11W"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/etpassword"
+            android:textSize="14sp"
+            android:textColor="#F50A1E"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:textSize="16sp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="* Password:"
+            android:id="@+id/textView11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/etpassword"
+            android:textSize="14sp"
+            android:textColor="#F50A1E"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/etcompanypassword"
+            android:background="@drawable/box"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/buttonSubmit" />
+
+        <TextView
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2e5894"
+            android:textSize="12sp"
+            android:text="Please confirm the information provided above is correct. A verification email will be send to the address given."
+            android:id="@+id/textviwaa"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+        <Button
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2e5894"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="VERIFY"
+            android:id="@+id/buttonverivy"/>
+
+        <Button
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2e5894"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Login"
+            android:id="@+id/clogin"/>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>
